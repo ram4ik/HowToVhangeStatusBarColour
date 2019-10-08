@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,130 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HowToVhangeStatusBarColour" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnK-SG-z9o">
+                                <rect key="frame" x="184" y="778" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="THG-zG-iX1" kind="show" id="n1r-96-3O1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dnK-SG-z9o" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="184" id="MkG-kb-XnZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dnK-SG-z9o" secondAttribute="trailing" constant="184" id="QHA-WE-0Wf"/>
+                            <constraint firstItem="dnK-SG-z9o" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Rbj-Y6-J7t"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="2w6-rP-bQI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="139" y="84"/>
+        </scene>
+        <!--View Controller1-->
+        <scene sceneID="Aq6-ym-ZdT">
+            <objects>
+                <viewController id="THG-zG-iX1" customClass="ViewController1" customModule="HowToVhangeStatusBarColour" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zRR-qe-NfI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rla-O1-iEQ">
+                                <rect key="frame" x="184" y="778" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="sK5-XP-X9q" kind="show" id="FfJ-vL-Gv1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="K1e-ac-v2C" firstAttribute="trailing" secondItem="rla-O1-iEQ" secondAttribute="trailing" constant="184" id="G22-TF-cQS"/>
+                            <constraint firstItem="rla-O1-iEQ" firstAttribute="leading" secondItem="K1e-ac-v2C" secondAttribute="leading" constant="184" id="eYN-an-zdm"/>
+                            <constraint firstItem="rla-O1-iEQ" firstAttribute="bottom" secondItem="K1e-ac-v2C" secondAttribute="bottom" id="mPo-cg-Z9h"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="K1e-ac-v2C"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="v0h-B4-BPW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fih-SB-Wxa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="803" y="85"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="8VF-jn-h9z">
+            <objects>
+                <viewController id="sK5-XP-X9q" customClass="ViewController2" customModule="HowToVhangeStatusBarColour" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vEJ-Ia-QkZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Jg-VR-Lu1">
+                                <rect key="frame" x="184" y="778" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2XO-uc-tnU" kind="show" id="Orp-V9-jeO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3Jg-VR-Lu1" firstAttribute="leading" secondItem="bMX-wz-3Ic" secondAttribute="leading" constant="184" id="0kH-v6-9ZV"/>
+                            <constraint firstItem="3Jg-VR-Lu1" firstAttribute="bottom" secondItem="bMX-wz-3Ic" secondAttribute="bottom" id="4MR-cz-Ucm"/>
+                            <constraint firstItem="bMX-wz-3Ic" firstAttribute="trailing" secondItem="3Jg-VR-Lu1" secondAttribute="trailing" constant="184" id="jAY-8f-pSq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bMX-wz-3Ic"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Dxh-3L-F0d"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="efo-TZ-ohh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1514" y="90"/>
+        </scene>
+        <!--View Controller3-->
+        <scene sceneID="eAM-6h-Vzc">
+            <objects>
+                <viewController id="2XO-uc-tnU" customClass="ViewController3" customModule="HowToVhangeStatusBarColour" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VYg-iM-Zak">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOV-qG-vsS">
+                                <rect key="frame" x="184" y="778" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="fsF-h2-7qX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yu1-P4-GNq" firstAttribute="trailing" secondItem="MOV-qG-vsS" secondAttribute="trailing" constant="184" id="JE6-Xd-IFY"/>
+                            <constraint firstItem="MOV-qG-vsS" firstAttribute="leading" secondItem="yu1-P4-GNq" secondAttribute="leading" constant="184" id="QX4-51-jbg"/>
+                            <constraint firstItem="MOV-qG-vsS" firstAttribute="bottom" secondItem="yu1-P4-GNq" secondAttribute="bottom" id="lRp-EK-6Ui"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yu1-P4-GNq"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qcG-ol-9Yr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bRQ-O8-GAq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2245" y="79"/>
         </scene>
     </scenes>
 </document>
